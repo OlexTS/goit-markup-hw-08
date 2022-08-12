@@ -1,4 +1,9 @@
-@mixin section($padding) {
+@mixin section($padding: 60px) {
   padding-top: $padding;
   padding-bottom: $padding;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

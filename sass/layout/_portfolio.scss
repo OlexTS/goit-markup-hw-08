@@ -9,8 +9,8 @@
   gap: 30px;
 }
 
-.portfolio-link {
-  @extend %;
+.portfolio__link {
+  @extend %reset-link;
   display: block;
   transition: box-shadow var(--animation-fast);
 
@@ -18,6 +18,14 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .overlay {
+    transform: translateY(0);
+  }
+
+  &:focus .overlay {
+    transform: translateY(0);
   }
 }
 
