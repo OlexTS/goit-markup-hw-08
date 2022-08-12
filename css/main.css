@@ -100,7 +100,7 @@ img {
 .about__title,
 .team__title,
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -113,6 +113,7 @@ img {
 .team__title,
 .clients__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -719,6 +720,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -726,6 +729,16 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .clients__link {
@@ -744,6 +757,7 @@ img {
   border-radius: 4px;
   -webkit-transition: border var(--animation-fast);
   transition: border var(--animation-fast);
+  min-width: 210px;
 }
 .clients__link:hover, .clients__link:focus {
   border: 1px solid #2196f3;
@@ -753,6 +767,16 @@ img {
 }
 .clients__link:focus .clients__icon {
   fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    min-width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    min-width: 170px;
+  }
 }
 
 .clients__icon {

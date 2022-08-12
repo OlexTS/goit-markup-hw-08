@@ -5,9 +5,15 @@
 .clients__list {
   @extend %reset-list;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .clients__link {
@@ -20,6 +26,7 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border var(--animation-fast);
+  min-width: 210px;
 
   &:hover,
   &:focus {
@@ -32,6 +39,14 @@
 
   &:focus .clients__icon {
     fill: #2196f3;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 170px;
   }
 }
 
