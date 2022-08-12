@@ -1,0 +1,82 @@
+.portfolio {
+  @extend %section;
+}
+
+.portfolio__list {
+  @extend %reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio__link {
+  @extend %reset-link;
+  display: block;
+  transition: box-shadow var(--animation-fast);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .overlay {
+    transform: translateY(0);
+  }
+
+  &:focus .overlay {
+    transform: translateY(0);
+  }
+}
+
+.portfolio__item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.portfolio__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-dark-txt-clr);
+}
+
+.portfolio__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.potfolio__border {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.portfolio__card-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-box__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--animation-fast);
+}
+
+.overlay__text {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--secondary-light-txt-clr);
+}
+
+.overlay {
+}

@@ -1,0 +1,41 @@
+.clients {
+  @extend %section;
+}
+
+.clients__list {
+  @extend %reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients__link {
+  @extend %reset-link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border var(--animation-fast);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+
+  &:hover .clients__icon {
+    fill: #2196f3;
+  }
+
+  &:focus .clients__icon {
+    fill: #2196f3;
+  }
+}
+
+.clients__icon {
+  fill: #afb1b8;
+  transition: fill var(--animation-fast);
+}
