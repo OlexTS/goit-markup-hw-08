@@ -30,7 +30,7 @@
   overflow: hidden;
 }
 
-.portfolio, .clients, .team, .about {
+.portfolio, .team, .about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -102,11 +102,18 @@ img {
 .clients__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-dark-txt-clr);
+}
+@media screen and (min-width: 1200px) {
+  .about__title,
+.team__title,
+.clients__title {
+    font-size: 36px;
+  }
 }
 
 .hero__btn {
@@ -695,6 +702,17 @@ img {
   fill: #afb1b8;
   -webkit-transition: fill var(--animation-fast);
   transition: fill var(--animation-fast);
+}
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__list {
