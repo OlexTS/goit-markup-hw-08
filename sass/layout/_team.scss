@@ -1,5 +1,5 @@
 .team {
-  @extend %section;
+  @include section;
   background: var(--light-bg-clr);
 }
 
@@ -7,7 +7,28 @@
   @extend %reset-list;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--indent);
+  --items: 1;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
+}
+
+.team__item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 }
 
 .team__card {
