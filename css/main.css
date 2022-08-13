@@ -32,7 +32,7 @@
   overflow: hidden;
 }
 
-.portfolio, .about {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -582,6 +582,22 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
 }
 
 .about__list {
