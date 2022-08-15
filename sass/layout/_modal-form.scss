@@ -5,12 +5,16 @@
 .form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--secondary-dark-txt-clr);
   display: block;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__group {
@@ -89,15 +93,21 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  height: 14px;
 }
 
 .agreement__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   user-select: none;
   margin-left: 8px;
   text-underline-position: under;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .agreement__link {
@@ -109,6 +119,8 @@
 }
 
 .agreement__icon {
+  display: flex;
+  flex-shrink: 1;
   transition: border var(--animation-fast), fill var(--animation-fast);
   cursor: pointer;
 }
