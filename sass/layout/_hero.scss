@@ -1,6 +1,6 @@
 .main__hero {
   @include section(118px);
-  max-width: 480px;
+  // max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -11,9 +11,9 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   max-width: 768px;
+  // }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -33,9 +33,6 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-light-txt-clr);
-
-  @media screen and (min-width: 768px) {
-  }
 
   @media screen and (min-width: 1200px) {
     max-width: 696px;
