@@ -77,9 +77,24 @@
 .btn__list {
   @extend %reset-list;
   display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  gap: 15px 8px;
+  max-width: 326px;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: none;
+  }
 }
 
 .portfolio__btn {

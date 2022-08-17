@@ -32,11 +32,6 @@
   overflow: hidden;
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .portfolio__link, .social__link, .footer__link, .address__link, .footer__logo, .clients__link, .card-team__link, .nav__link, .header__link, .header__logo, .menu-social__link, .menu-contacts__mail, .menu-contacts__phone, .menu__link {
   text-decoration: none;
   color: currentColor;
@@ -208,11 +203,34 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  gap: 15px 8px;
+  max-width: 326px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .btn__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    max-width: none;
+  }
 }
 
 .portfolio__btn {
@@ -1489,6 +1507,17 @@ img {
 }
 .agreement__checkbox:checked + .agreement__icon .register__icon--uncheck {
   opacity: 0;
+}
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__list {
