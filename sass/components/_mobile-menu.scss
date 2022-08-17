@@ -63,6 +63,9 @@
   &:active {
     color: var(--accent-txt-color);
   }
+  &--current {
+    color: var(--accent-txt-color);
+  }
 }
 
 .menu-contacts {

@@ -441,6 +441,9 @@ img {
 .menu__link:active {
   color: var(--accent-txt-color);
 }
+.menu__link--current {
+  color: var(--accent-txt-color);
+}
 
 .menu-contacts {
   margin-bottom: auto;
