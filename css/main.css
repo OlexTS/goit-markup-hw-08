@@ -1550,8 +1550,21 @@ img {
 }
 
 .portfolio__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+  max-width: 450px;
+  max-height: 404px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    max-width: 370px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio__title {
