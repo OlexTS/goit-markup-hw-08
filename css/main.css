@@ -1598,7 +1598,7 @@ img {
 .portfolio__item {
   width: 100%;
   max-width: 450px;
-  max-height: 404px;
+  max-height: 440px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
