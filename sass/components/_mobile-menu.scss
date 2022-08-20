@@ -84,6 +84,10 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-txt-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 27px;
+  }
 }
 
 .menu-contacts__mail {
@@ -111,6 +115,10 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-txt-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+  }
 }
 
 .menu-social__item:not(:last-child) {

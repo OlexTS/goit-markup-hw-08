@@ -358,6 +358,11 @@ img {
   transition: transform var(--animation-fast);
   transition: transform var(--animation-fast), -webkit-transform var(--animation-fast);
 }
+@media screen and (max-width: 479px) {
+  .card-box__overlay {
+    padding: 24px;
+  }
+}
 
 .overlay__text {
   text-align: left;
@@ -365,6 +370,11 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--secondary-light-txt-clr);
+}
+@media screen and (max-width: 397px) {
+  .overlay__text {
+    font-size: 14px;
+  }
 }
 
 .menu__overlay {
@@ -464,6 +474,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-txt-color);
 }
+@media screen and (max-width: 479px) {
+  .menu-contacts__phone {
+    font-size: 27px;
+  }
+}
 
 .menu-contacts__mail {
   font-weight: 500;
@@ -494,6 +509,11 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-txt-color);
+}
+@media screen and (max-width: 479px) {
+  .menu-social__link {
+    font-size: 10px;
+  }
 }
 
 .menu-social__item:not(:last-child) {
@@ -567,16 +587,10 @@ img {
 }
 
 .menu__btn-open {
-  margin-left: auto;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 10;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -813,9 +827,10 @@ img {
     padding-bottom: 94px;
   }
 }
-
-.benefits {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-bottom: 0;
+  }
 }
 
 .benefits__list {
